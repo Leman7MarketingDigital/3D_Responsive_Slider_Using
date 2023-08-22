@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Touch Slider Using Html CSS & Swiper.js</title>
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+     <div class="swiper-container">
+          <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="imagen/img1.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>Mark Agroiks <br> <span>CEO, Agrok Inc.</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="imagen/img2.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>Ani Jhon <br> <span>CEO, Apce.co</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="imagen/img3.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>Martha Maldonado <br> <span>Executive Chairman</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="imagen/img4.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>Leslie Alexander<br> <span>Founder-CO</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="imagen/img5.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>Nigel Robinson <br> <span>CEO</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="imagen/img6.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>Kathryn Murphy <br> <span>Founder-CO</span></h3>
+                   </div>
+               </div>
+               <div class="swiper-slide">
+                   <div class="imgBx">
+                       <img src="imagen/img7.jpg" alt="">
+                   </div>
+                   <div class="details">
+                       <h3>Blake Anderson <br> <span>Account Managar</span></h3>
+                   </div>
+               </div>
+          </div>
+    <div class="swiper-pagination"></div>
+  </div>
+   
+    <script type="text/javascript" src="js/swiper.min.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+</body>
+</html>
